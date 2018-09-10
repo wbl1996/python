@@ -20,7 +20,7 @@ def get_imgs(html):
             f.close()
         x = x+1
 
-
+# get_imgs(html)
 if __name__ == '__main__':
     print("开始获取页面...")
     html = get_html("https://tieba.baidu.com/p/1753935195?red_tag=0742995080")
