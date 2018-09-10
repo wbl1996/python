@@ -10,7 +10,7 @@ def get_html(url):
     html = urllib.request.urlopen(req)
     html = html.read()
     return html
-#根据主页获取1-9页的url，这里我只写了9页，因为没有优化，所有不敢写太多。
+#根据主页获取1-9页的url，这里我只写了9页，因为没有优化，所有不敢写太多。 
 def get_allurls(url):
     urls = []
     for x in range(1,10):
