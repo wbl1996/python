@@ -19,4 +19,4 @@ if __name__ == '__main__':
     html = get_html(url)
     print("正在下载图片...")
     download(html)
-    print("图片下载完成！")
+    print("图片下载完成!")
