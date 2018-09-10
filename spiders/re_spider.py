@@ -24,4 +24,4 @@ def output(url):
 if __name__ == '__main':
     print('正在运行...')
     output('http://tieba.baidu.com/p/1753935195')
-# output('http://tieba.baidu.com/p/1753935195')这一条语句前面不能加空格和回车
+# output('http://tieba.baidu.com/p/1753935195') 这一条语句前面不能加空格和回车
