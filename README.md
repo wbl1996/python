@@ -14,4 +14,9 @@
 ## 关于下载文件
 有两种方式  
 1. 使用[with open](https://github.com/wbl1996/python/blob/master/spiders/image_spider.py) 
-2. 使用[urlretrieve](https://github.com/wbl1996/python/blob/master/spiders/beautifulsoup_urlretrive_spider.py)
+2. 使用[urlretrieve](https://github.com/wbl1996/python/blob/master/spiders/beautifulsoup_urlretrive_spider.py)  
+使用urlretrieve可能会遇到403的问题，解决方案如下：
+- opener = urllib.request.build_opener()
+- opener.addheaders = [('User-Agent','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36')]
+- urllib.request.install_opener(opener)
+- urllib.request.urlretrieve(url,"f:\\img.jpg")
